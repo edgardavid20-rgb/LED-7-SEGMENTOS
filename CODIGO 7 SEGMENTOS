@@ -1,0 +1,149 @@
+// C++ code
+int a = 2;
+int b = 3;
+int c = 4;
+int d = 5;
+int e = 6;
+int f = 7;
+int g = 8;
+int dp = 9;
+int tiempo = 1000;
+
+int MI = 10;
+int MD = 11;
+
+void setup ()
+{
+  pinMode(a,OUTPUT);
+  pinMode(b,OUTPUT);
+  pinMode(c,OUTPUT);
+  pinMode(d,OUTPUT);
+  pinMode(f,OUTPUT);
+  pinMode(g,OUTPUT);
+  
+  pinMode(MI,OUTPUT); //Motor Izquierdo
+  pinMode(MD,OUTPUT); //Motor Derecho
+}
+
+void loop()
+{
+  digitalWrite(a, LOW); //Numero 1
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, LOW);
+  digitalWrite(e, LOW);
+  digitalWrite(f, LOW);
+  digitalWrite(g, LOW);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, HIGH); //Numero 2
+  digitalWrite(b, HIGH);
+  digitalWrite(c, LOW);
+  digitalWrite(d, HIGH);
+  digitalWrite(e, HIGH);
+  digitalWrite(f, LOW);
+  digitalWrite(g, HIGH);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, HIGH); //Numero 3
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, HIGH);
+  digitalWrite(e, LOW);
+  digitalWrite(f, LOW);
+  digitalWrite(g, HIGH);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, LOW); //Numero 4
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, LOW);
+  digitalWrite(e, LOW);
+  digitalWrite(f, HIGH);
+  digitalWrite(g, HIGH);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, HIGH); //Numero 5
+  digitalWrite(b, LOW);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, HIGH);
+  digitalWrite(e, LOW);
+  digitalWrite(f, HIGH);
+  digitalWrite(g, HIGH);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, HIGH); //Numero 6
+  digitalWrite(b, LOW);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, HIGH);
+  digitalWrite(e, HIGH);
+  digitalWrite(f, HIGH);
+  digitalWrite(g, HIGH);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, HIGH); //Numero 7
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, LOW);
+  digitalWrite(e, LOW);
+  digitalWrite(f, LOW);
+  digitalWrite(g, LOW);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, HIGH); //Numero 8
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, HIGH);
+  digitalWrite(e, HIGH);
+  digitalWrite(f, HIGH);
+  digitalWrite(g, HIGH);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, HIGH); //Numero 9
+  digitalWrite(b, HIGH);
+  digitalWrite(c, HIGH);
+  digitalWrite(d, LOW);
+  digitalWrite(e, LOW);
+  digitalWrite(f, HIGH);
+  digitalWrite(g, HIGH);
+  digitalWrite(dp, LOW);
+  delay(tiempo);
+  
+  digitalWrite(a, LOW); //Numero 0
+  digitalWrite(b, LOW);
+  digitalWrite(c, LOW);
+  digitalWrite(d, LOW);
+  digitalWrite(e, LOW);
+  digitalWrite(f, LOW);
+  digitalWrite(g, LOW);
+  digitalWrite(dp, HIGH);
+  delay(tiempo);
+  
+  digitalWrite(MI, HIGH); //Motor Izquierdo
+  digitalWrite(MD, HIGH); //Motor Derecho
+  delay(3000);
+  
+  digitalWrite(MI, LOW); //Motor Izquierdo
+  digitalWrite(MD, LOW); //Motor Derecho
+  delay(3000);
+  
+  digitalWrite(MI, LOW); //Motor Izquierdo
+  digitalWrite(MD, HIGH); //Motor Derecho
+  delay(3000);
+  
+  digitalWrite(MI, HIGH); //Motor Izquierdo
+  digitalWrite(MD, LOW); //Motor Derecho
+  delay(3000);
+  
+  digitalWrite(MI, LOW); //Motor Izquierdo
+  digitalWrite(MD, LOW); //Motor Derecho
+  delay(3000);
+}
